@@ -20,3 +20,10 @@
 
 (println (discounted-value 1000))
 (println (discounted-value 100))
+
+(defn convert-and-sum
+  [value]
+  (let [parsed-value (parse-double value)]
+    (+ parsed-value 1)))
+
+(map convert-and-sum ["1" "1.1"])
