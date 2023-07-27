@@ -33,3 +33,5 @@
 
 (reduce + prices)
 (reduce + 1 [15])
+(map ["i"] (range 7))
+(clojure.string/join "" (for [x (range 7)] "i"))
